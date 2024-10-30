@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandybay - Movie and TVShow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">SandyBay</div>
+        <ul class="nav-links">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#tvshows">TV Shows</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="auth-buttons">
+                    <input type="text" id="username-input" placeholder="Enter Username">
+                    <button id="login-btn">Login</button>
+                    <button id="logout-btn" style="display: none;">Logout</button>
+                  </div>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" />
+            <label for="theme-switch" class="toggle-label">🌞/🌙</label>
+        </div>
+    </nav>
+
+    <section id="main" class="hero">
+        <div class="hero-content">
+           
+        </div>
+    </section>
+
+    
+    
+
+    
+    <section id="movies" class="content-section">
+        <h2>Popular Movies</h2>
+        <div class="content-grid">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                <h3>Inception</h3>
+            </div>
+            <div class="card">
+                <img src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==" alt="Movie 2">
+                <h3>John Wick</h3>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg" alt="Movie 3">
+                <h3>Avengers</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- TV Shows Section -->
+    <section id="tvshows" class="content-section">
+        <h2>Top TV Shows</h2>
+        <div class="content-grid">
+            <div class="card">
+                <img src="https://source.unsplash.com/300x400/?tv,drama" alt="TV Show 1">
+                <h3>Breaking Bad</h3>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/300x400/?series" alt="TV Show 2">
+                <h3>Stranger Things</h3>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/300x400/?comedy" alt="TV Show 3">
+                <h3>Friends</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section contact">
+        <h2>Contact Us</h2>
+        <p>Yerlan Sandybayev</p>
+        <p>Phone: +7 708 103 4250</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ :root {
+     --bg-color: #f5f5f5;
+     --text-color: #333;
+     --card-bg: #fff;
+ }
+ 
+ [data-theme="dark"] {
+     --bg-color: #121212;
+     --text-color: #f1f1f1;
+     --card-bg: #1f1f1f;
+ }
+ 
+ body {
+     background-color: var(--bg-color);
+     color: var(--text-color);
+     transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ 
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 20px;
+     background-color: #333;
+     color: white;
+ }
+ 
+ .nav-links {
+     display: flex;
+     list-style: none;
+ }
+ 
+ .nav-links li a {
+     color: white;
+     text-decoration: none;
+     margin: 0 15px;
+     transition: color 0.3s;
+ }
+ 
+ .nav-links li a:hover {
+     color: #f39c12;
+ }
+ 
+ 
+ .hero {
+     background: url('https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==') no-repeat center center/cover;
+     height: 80vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     color: black;
+     padding: 20px;
+ }
+ 
+ .hero-content {
+     max-width: 600px;
+ }
+ 
+ 
+ 
+ 
+ .content-section {
+     padding: 50px;
+     text-align: center;
+ }
+ 
+ .content-grid {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+ 
+ .card {
+     background-color: var(--card-bg);
+     padding: 10px;
+     border-radius: 8px;
+     width: 300px;
+     transition: transform 0.3s;
+ }
+ 
+ .card img {
+     width: 100%;
+     border-radius: 8px;
+ }
+ 
+ .card:hover {
+     transform: scale(1.05);
+ }
+ 
+ 
+ .contact {
+     background-color: #333;
+     color: white;
+     padding: 20px;
+ }
+ 
+ /* Media Queries */
+ @media (max-width: 768px) {
+     .nav-links {
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     .content-grid {
+         flex-direction: column;
+     }
+ }
+ 
